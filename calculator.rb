@@ -25,18 +25,28 @@ def divid (first_operand , second_operand)
 	puts result
 end
 
+
+# def power (first_operand , second_operand)
+
+# 	x = second_operand.to_i
+
+# 	result = first_operand ** x
+
+# 	puts result
+# end
+
+
 def power (first_operand , second_operand)
 
-	x = second_operand.to_i
-
-	result = first_operand * first_operand
-
+	result = first_operand
+	i = 1
+	while i < second_operand.to_i
+		result = result*first_operand
+		i +=1
+	end
 	puts result
+	
 end
-
-#Implement the power using multiplication such that m^n = m*m*m..*m (ntimes) i.e. 2^4 = 2*2*2*2
-
-#result = first_operand ** x
 
 def calculator
 	puts "Please insert the first number"
